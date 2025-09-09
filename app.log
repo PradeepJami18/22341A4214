@@ -1,0 +1,30 @@
+2025-09-09T11:25:17.387083 - INFO - Request: GET /
+2025-09-09T11:25:17.393370 - ERROR - 404 Not Found: /
+2025-09-09T11:25:17.570137 - INFO - Request: GET /favicon.ico
+2025-09-09T11:25:17.570137 - ERROR - Access attempt for non-existent shortcode: favicon.ico
+2025-09-09T11:25:49.783514 - INFO - Request: GET /shorturls
+2025-09-09T11:25:49.783514 - ERROR - Access attempt for non-existent shortcode: shorturls
+2025-09-09T11:27:56.552074 - INFO - Request: POST /shorturls
+2025-09-09T11:29:40.406624 - INFO - Request: GET /shorturls
+2025-09-09T11:29:40.409583 - ERROR - Access attempt for non-existent shortcode: shorturls
+2025-09-09T11:29:40.534065 - INFO - Request: GET /favicon.ico
+2025-09-09T11:29:40.538420 - ERROR - Access attempt for non-existent shortcode: favicon.ico
+2025-09-09T11:30:23.788861 - INFO - Request: POST /shorturls
+2025-09-09T11:30:23.792369 - INFO - Short URL created: abcd1 -> https://example.com/long/path
+2025-09-09T11:31:18.791878 - INFO - Request: GET /abcd1
+2025-09-09T11:31:18.799914 - INFO - Redirecting abcd1 to https://example.com/long/path
+2025-09-09T11:31:43.392119 - INFO - Request: GET /abcd1
+2025-09-09T11:31:43.392119 - INFO - Redirecting abcd1 to https://example.com/long/path
+2025-09-09T11:32:26.995935 - INFO - Request: GET /shorturls/abcd1
+2025-09-09T11:34:58.355518 - INFO - Request: POST /shorturls
+2025-09-09T11:34:58.368641 - ERROR - Invalid shortcode: abc$%
+2025-09-09T11:35:29.007489 - INFO - Request: POST /shorturls
+2025-09-09T11:35:29.008489 - ERROR - Shortcode collision: abcd1
+2025-09-09T11:36:05.265347 - INFO - Request: GET /nonexistent
+2025-09-09T11:36:05.266362 - ERROR - Access attempt for non-existent shortcode: nonexistent
+2025-09-09T11:37:09.103954 - INFO - Request: POST /shorturls
+2025-09-09T11:37:09.104946 - INFO - Short URL created: expired1 -> https://example.com
+2025-09-09T11:39:03.714197 - INFO - Request: GET /expired1
+2025-09-09T11:39:03.715263 - ERROR - Access attempt for expired shortcode: expired1
+2025-09-09T11:39:30.657360 - INFO - Request: GET /unknown-endpoint
+2025-09-09T11:39:30.657360 - ERROR - Access attempt for non-existent shortcode: unknown-endpoint
